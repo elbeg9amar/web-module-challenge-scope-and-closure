@@ -116,7 +116,7 @@ Final Score: awayTeam - homeTeam */
 function scoreboard(callScore, callInn, num) {
   let totalScore = {
     'Home' : 0,
-    'Away': 0 ,
+    'Away': 0 
   }
   for (let i=1; i<=num; i++){
     totalScore.Home += callInn()
@@ -126,14 +126,21 @@ function scoreboard(callScore, callInn, num) {
   return `Final Score:${totalScore.Home} - ${totalScore.Away}`
 }
 console.log(scoreboard(finalScore,inning,9))
+//
 
-
-function createBase(baseNum){
-  return function(addNum){
-       return addNum + baseNum; 
-    }
-  
+function personalDice(name){
+  return function(){
+      // generate random number between 1 and 6
+    const newRoll = Math.floor(Math.random() * 6);
+    console.log(`${name} rolled a ${newRoll}`)
+  }
 }
-var addsix = createBase(6);
-console.log(addsix(10));
-console.log(addsix(21));
+
+const dansRoll = personalDice("Dan");
+
+const zoesRoll = personalDice("Zoe");
+
+
+dansRoll();
+dansRoll();
+//

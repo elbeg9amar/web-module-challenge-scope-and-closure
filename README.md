@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is the funtion inside the function
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -62,9 +63,12 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? inside the function closure function used for generating numbers
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+text, remove a. 
+
 c. What is the lexical scope of `newRoll`? 
+Math.floor(Math.random() * 6)
 
 ### Task 2c - Exit Ticket
 
